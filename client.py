@@ -4,7 +4,7 @@ and file reading.
 
 File: client.py
 Initial developers: COMP 801 instructors
-Developer:
+Developer: Swathi Danturi
 """
 from scrabble_letters import ScrabbleLetters
 

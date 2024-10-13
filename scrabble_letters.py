@@ -3,7 +3,7 @@ Practice with the dictionary built-in data type.
 
 File: scrabble_letters.py
 Initial developers: COMP 801 instructors
-Developer:
+Developer: Swathi Danturi
 """
 
 
