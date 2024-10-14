@@ -22,14 +22,25 @@
 - `letters` string whose frequency is needed is passed as an argument
 - intialize `letters_frequency` to an empty dictionary
 - for each character `char` in `letters`, iterate through the following:
-    - assign the first element in the list `self.scrabble_letters[char]` to `letters_frequency[char]`
+    - assign the first element in the list values of the dictionary `self.scrabble_letters` at the key `char` to the dictionary `letters_frequency`, at the key `char`
+- `letters_frequency` is the dictionary with `letters` as keys and its `frequency` as values
 - return `letters_frequency`
 
 ## Design for reduce_frequency method of scrabble_letters.py
 - `self` is the current instance of the class
 - `letters` is a character whose frequency is to be reduced is passed as an argument
 - convert the upper case `letters` to lower case using `.lower()`
-- if the first element in the list of value of`self.scrabble_letters[letters]` is greater than zero:
+- if the first element in the list of values of the dictionary `self.scrabble_letters` at the key `letters` is greater than zero:
     - reduce it by 1
     - return `True`
 - return `False`
+
+## Design for get_points method of scrabble_letters.py
+- `self` is the current instance of the class
+- `word` is a sequence of letters whose sum of points is needed is passed as an argument
+- initialize the accumulator `total_points` to zero
+- for each character `char` in word, do the following steps:
+    - get the `points` of `char` from `self.scrabble_letters` dictionary using `char` as the key
+    - use indexing as points is the second element in the `list value` of the key `char`
+    - add these `points` to the `total_points`
+- return `total_points`
