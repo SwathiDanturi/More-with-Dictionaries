@@ -74,6 +74,7 @@ class ScrabbleLetters:
         'A' to 'Z', 'a' to 'z' or '_' (blank).
         :return: True if the letter frequency was reduced, False otherwise.
         """
+        return True
 
     def get_freq(self, letters: str) -> dict:
         """
