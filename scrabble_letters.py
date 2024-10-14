@@ -67,16 +67,13 @@ class ScrabbleLetters:
 
     def reduce_freqeuncy(self, letter: str) -> bool:
         """
-        Reduces the frequency of the given letter if the letter frequency is 
-        greater than zero. 
+        Reduces the frequency of the given letter if the letter frequency is
+        greater than zero.
 
-        :param letter: One letter in the form of a string. The letter may be 
-        'A' to 'Z', 'a' to 'z' or '_' (blank). 
-        :return: True if the letter frequency was reduced, False otherwise.  
+        :param letter: One letter in the form of a string. The letter may be
+        'A' to 'Z', 'a' to 'z' or '_' (blank).
+        :return: True if the letter frequency was reduced, False otherwise.
         """
-        
-
-
 
     def get_freq(self, letters: str) -> dict:
         """
