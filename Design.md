@@ -24,3 +24,12 @@
 - for each character `char` in `letters`, iterate through the following:
     - assign the first element in the list `self.scrabble_letters[char]` to `letters_frequency[char]`
 - return `letters_frequency`
+
+## Design for reduce_frequency method of scrabble_letters.py
+- `self` is the current instance of the class
+- `letters` is a character whose frequency is to be reduced is passed as an argument
+- convert the upper case `letters` to lower case using `.lower()`
+- if the first element in the list of value of`self.scrabble_letters[letters]` is greater than zero:
+    - reduce it by 1
+    - return `True`
+- return `False`
