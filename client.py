@@ -26,7 +26,7 @@ def main():
     print(f"{freq}")
     print(f"{points}")
 
-    scrabble.reduce_freqeuncy(word)
+    scrabble.reduce_freqeuncy('h')
     freq = scrabble.get_freq(word)
 
     print(f"{freq}")
@@ -38,14 +38,10 @@ def easy():
     """
     easy_file = "sample.txt"
 
-    file_object = open(file=easy_file, encoding='UTF-8', mode='r')
-
-    line = file_object.readline()
-
-    while line:
-        line = line.strip()
-        print(line)
-        line = file_object.readline()
+    with open(easy_file, encoding='UTF-8', mode='r') as file_object:
+        for line in file_object:
+            line = line.strip()
+            print(line)
 
 
 def other():
@@ -54,10 +50,9 @@ def other():
     """
     scrabble_file = "scrabble.csv"
 
-    letters_file = open(file=scrabble_file, encoding='UTF-8', mode='r')
-
-    for line in letters_file:
-        print(line)
+    with open(scrabble_file, encoding='UTF-8', mode='r') as letters_file:
+        for line in letters_file:
+            print(line)
 
 
 if __name__ == "__main__":

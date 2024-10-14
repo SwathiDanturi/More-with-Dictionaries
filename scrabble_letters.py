@@ -60,10 +60,9 @@ class ScrabbleLetters:
         """
         self.scrabble_letters = {}
 
-        letters_file = open(file=scrabble_file, encoding="UTF-8", mode="r")
-
-        for line in letters_file:
-            print(line)
+        with open(scrabble_file, encoding='UTF-8', mode='r') as letters_file:
+            for line in letters_file:
+                print(line)
 
     def reduce_freqeuncy(self, letter: str) -> bool:
         """
