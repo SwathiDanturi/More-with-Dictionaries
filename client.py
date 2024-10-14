@@ -26,7 +26,7 @@ def main():
     print(f"{freq}")
     print(f"{points}")
 
-    scrabble.reduce_freq(word)
+    scrabble.reduce_freqeuncy(word)
     freq = scrabble.get_freq(word)
 
     print(f"{freq}")
