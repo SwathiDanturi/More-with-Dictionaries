@@ -27,7 +27,7 @@ def test_get_freq_for_word_with_blank():
     file_path = 'C:/Users/Swath/courses/comp801/homework/h2/scrabble.csv'
     test_scrabble_letters = ScrabbleLetters(file_path)
     actual = test_scrabble_letters.get_freq('h i')
-    expected = {'h': 2, ' ': 9, 'i': 2}
+    expected = {'h': 2, ' ': 2, 'i': 9}
     assert actual == expected
 
 

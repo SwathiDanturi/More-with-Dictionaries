@@ -28,9 +28,9 @@
 
 ## Design for reduce_frequency method of scrabble_letters.py
 - `self` is the current instance of the class
-- `letters` is a character whose frequency is to be reduced is passed as an argument
-- convert the upper case `letters` to lower case using `.lower()`
-- if the first element in the list of values of the dictionary `self.scrabble_letters` at the key `letters` is greater than zero:
+- `letter` is a character whose frequency is to be reduced is passed as an argument
+- convert the upper case `letter` to lower case using `.lower()`
+- if the first element in the list of values of the dictionary `self.scrabble_letters` at the key `letter` is greater than zero:
     - reduce it by 1
     - return `True`
 - return `False`
