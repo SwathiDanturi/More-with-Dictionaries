@@ -105,5 +105,7 @@ class ScrabbleLetters:
         :param word: a sequence of letters in the form of a string.
         :return: An integer containing the total points for the word.
         """
-
-        return 0
+        total_points = 0
+        for char in word:
+            total_points += self.scrabble_letters[char][1]
+        return total_points
