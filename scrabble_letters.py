@@ -95,8 +95,10 @@ class ScrabbleLetters:
         each letter.  For example, if no frequencies have been reduced:
             The input "abc" will return {'a': 9, 'b' : 2, 'c': 2 }
         """
-
-        return {}
+        letters_frequency = {}
+        for char in letters:
+            letters_frequency[char] = self.scrabble_letters[char][0]
+        return letters_frequency
 
     def get_points(self, word: str) -> int:
         """
