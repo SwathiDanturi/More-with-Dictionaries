@@ -16,6 +16,7 @@
     - map the value `count_and_points` list for the key `letter` in the dictionary `self.scrabble_letter`
     - if `letter` is `blank` then the key should be space `' '`
 - `self.scrabble_letter` contains letters as the keys and `count` and `points` as value in a list
+- close the file using the file variable `letters_file`
 
 ## Design for get_freq method of scrabble_letters.py
 - `self` is the current instance of the class

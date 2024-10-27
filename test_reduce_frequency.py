@@ -17,7 +17,7 @@ def test_reduce_frequency_for_j():
     test_scrabble_letters = ScrabbleLetters(file_path)
     actual1 = test_scrabble_letters.reduce_freqeuncy('j')
     actual2 = test_scrabble_letters.reduce_freqeuncy('j')
-    expected = ('True', 'False')
+    expected = (True, False)
     actual = (actual1, actual2)
     assert actual == expected
 
@@ -31,7 +31,7 @@ def test_reduce_frequency_for_blank():
     actual1 = test_scrabble_letters.reduce_freqeuncy(' ')
     actual2 = test_scrabble_letters.reduce_freqeuncy(' ')
     actual3 = test_scrabble_letters.reduce_freqeuncy(' ')
-    expected = ('True', 'True', 'False')
+    expected = (True, True, False)
     actual = (actual1, actual2, actual3)
     assert actual == expected
 

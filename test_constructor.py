@@ -46,4 +46,16 @@ def test_init_constructor_with_filename():
     assert actual == expected
 
 
+def test_init_constructor_with_differentfile():
+    """
+    Testing constructor of scrabble_letters.py
+    with the dummy file scrabble_test.csv
+    """
+    test_scrabble_letters = ScrabbleLetters('scrabble_test.csv')
+    actual = test_scrabble_letters.scrabble_letters
+    expected = {'a': [9, 1], 'b': [2, 3], 'c': [2, 3],
+                'd': [4, 2], 'e': [12, 1]}
+    assert actual == expected
+
+
 pytest.main()

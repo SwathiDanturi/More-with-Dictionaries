@@ -17,7 +17,7 @@ def main():
     letters_file = "scrabble.csv"
 
     scrabble = ScrabbleLetters(letters_file)
-
+    print(scrabble.scrabble_letters)
     word = "help"
 
     freq = scrabble.get_freq(word)
