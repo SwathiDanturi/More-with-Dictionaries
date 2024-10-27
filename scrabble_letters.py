@@ -60,13 +60,13 @@ class ScrabbleLetters:
         """
         self.scrabble_letters = {}
 
-        with open(scrabble_file, encoding='UTF-8', mode='r') as letters_file:
+        with open(scrabble_file, encoding="UTF-8", mode="r") as letters_file:
             for line in letters_file:
                 print(line)
                 line = line.strip()
-                letter, count, points = line.split(',')
-                if letter == 'blank':
-                    letter = ' '
+                letter, count, points = line.split(",")
+                if letter == "blank":
+                    letter = " "
                 if count.isdigit() and points.isdigit():
                     count = int(count)
                     points = int(points)
